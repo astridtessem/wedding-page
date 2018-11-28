@@ -1,0 +1,144 @@
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #C2D8C0;
+  
+  @media (max-width: 768px) {
+    padding-top: 90px;
+    }
+}
+
+.timeline{
+  ul{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-position: center; 
+  background-size: 130px 110px; 
+  background-repeat: no-repeat; 
+  border: 6px #C2D8C0 solid;
+  @media (max-width: 768px) {
+    top:20px;
+    }
+}
+.timeline ul li div {
+
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  border-radius: 10px;
+  font-size: 18px;
+  @media (min-width: 768px) and (max-width: 992px) {
+    width: 300px;
+}
+@media (max-width: 768px) {
+  width:300px;
+  }
+
+  width: 400px;
+  padding: 15px;
+  background: #C2D8C0;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 41px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 75px;
+  @media (max-width: 768px) {
+    left:-150px;
+    padding-top:30px;
+    }
+
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color:  transparent #C2D8C0 transparent transparent;
+  @media (max-width: 768px) {
+    border-width: 16px 8px 0px 8px;
+    border-color: #C2D8C0 transparent  transparent  transparent;
+    left:145px;
+    bottom:-15px;
+    display: none;
+  }
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -470px;
+  @media (min-width: 768px) and (max-width: 992px) {
+    left: -370px;
+
+  }
+  @media (max-width: 768px) {
+    left:-150px;
+    padding-top:30px;
+    }
+
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #C2D8C0;
+  @media (max-width: 768px) {
+    border-width: 16px 8px 0px 8px;
+    border-color: #C2D8C0 transparent  transparent  transparent;
+    left:145px;
+    bottom:-15px;
+    display: none;
+
+  }
+
+}
+
+
+.timeline ul li{
+  &.konf::after {
+    background-image:url("../../images/konf.png");
+  }
+&.thai::after {
+  background-image:url("../../images/thai.png");
+}
+&.sti::after {
+  background-image:url("../../images/sti.png");
+}
+&.samboer::after {
+  background-image:url("../../images/samboer.png");
+}
+&.date::after {
+  background-image:url("../../images/date.png");
+}
+&.forlovet::after {
+  background-image:url("../../images/forlovet.png");
+}
+&.aupair::after {
+  background-image:url("../../images/aupair.png");
+}
+&.hus::after {
+  background-image:url("../../images/hus.png");
+}
+}

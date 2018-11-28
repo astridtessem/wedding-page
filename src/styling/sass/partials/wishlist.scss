@@ -1,0 +1,17 @@
+#wishList{
+    background: #C2D8C0;
+    
+    .introText{
+        text-align: center;
+        font-size:25px;
+        max-width: 1000px;
+        margin:auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        @media(max-width:767px){
+          font-size:20px;
+      
+        }
+    }
+    
+}

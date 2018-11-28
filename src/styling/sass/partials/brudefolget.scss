@@ -1,0 +1,27 @@
+#brudefolget{
+
+    max-width:800px;
+    margin:auto;
+    @media(max-width:767px){ 
+        background: #faf4eb
+      } 
+    
+    h1{
+        margin-bottom:50px;
+    }
+img{
+    width:300px;
+    height:300px;
+    display:inline-block;
+    //border:3px solid #BE5675;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+
+    margin-bottom:15px;
+}
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom:40px;
+}
+}

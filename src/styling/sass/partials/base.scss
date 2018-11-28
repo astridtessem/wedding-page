@@ -1,0 +1,90 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
+html,body{
+  height:100%;
+
+}
+
+.position-absolute{
+  position:absolute;
+}
+.position-relative{
+  position:relative;
+}
+body{
+  overflow-x: hidden;
+}
+
+.pad-top-md{
+  padding-top:40px;
+}
+
+.pad-bottom-sm{
+  padding-bottom:20px;
+}
+
+.pad-bottom-md{
+  padding-bottom:40px;
+}
+
+.pad-all-sm{
+  padding:20px;
+}
+
+.pad-right-sm{
+  padding-right:20px;
+}
+.pad-left-sm{
+  padding-left:20px;
+}
+.pad-bottom-sm{
+  padding-bottom:20px;
+}
+.pad-top-sm{
+  padding-top:20px;
+}
+
+.margin-bottom-xl{
+  margin-bottom:60px;
+}
+
+.full-width{
+  width:100%;
+}
+
+.table{
+  display: table;
+}
+.table-cell{
+  display: table-cell;
+}
+
+.text-align-center{
+  text-align: center;
+}
+ 
+.vertical-align-top{
+  vertical-align: top;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.grey{
+  color: #676767;
+}
+
+
+.is-visible-smartphone{
+  display: none;
+  @media(max-width:767px){
+    display: initial;
+  }
+}
+
+.is-hidden-smartphone{
+  @media(max-width:767px){
+    display: none;
+  }
+}
